@@ -119,7 +119,7 @@ const PhoneMockup = () => {
                 <span className="text-sm font-bold text-foreground">December 2</span>
                 <span className="text-xs text-muted-foreground">/ Monday</span>
               </div>
-              <div className="flex gap-2.5 mb-2">
+              <div className="flex gap-2.5">
                 <div className="w-16 h-12 rounded-lg bg-[#daa520] flex items-center justify-center overflow-hidden">
                   <span className="text-[8px]">📖</span>
                 </div>
@@ -139,6 +139,14 @@ const PhoneMockup = () => {
                     7:00 PM
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* December 5 */}
+            <div className="mb-3">
+              <div className="flex items-baseline gap-2 mb-2">
+                <span className="text-sm font-bold text-foreground">December 5</span>
+                <span className="text-xs text-muted-foreground">/ Thursday</span>
               </div>
               <div className="flex gap-2.5">
                 <div className="w-16 h-12 rounded-lg bg-[#6b8e6b] flex items-center justify-center overflow-hidden">
