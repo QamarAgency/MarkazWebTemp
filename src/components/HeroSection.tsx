@@ -5,8 +5,8 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden py-16 md:py-24">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-4">
+          <div className="text-center lg:text-left flex-1">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Discover local events that matter to you
             </h1>
@@ -27,8 +27,10 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="flex justify-center lg:justify-end">
-            <PhoneMockup />
+          <div className="flex justify-center lg:justify-end flex-shrink-0 -mr-8 lg:-mr-16">
+            <div className="transform rotate-[-8deg] hover:rotate-[-4deg] transition-transform duration-500">
+              <PhoneMockup />
+            </div>
           </div>
         </div>
       </div>
