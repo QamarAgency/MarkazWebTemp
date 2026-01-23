@@ -119,7 +119,7 @@ const PhoneMockup = () => {
                 <span className="text-sm font-bold text-foreground">December 2</span>
                 <span className="text-xs text-muted-foreground">/ Monday</span>
               </div>
-              <div className="flex gap-2.5">
+              <div className="flex gap-2.5 mb-2">
                 <div className="w-16 h-12 rounded-lg bg-[#daa520] flex items-center justify-center overflow-hidden">
                   <span className="text-[8px]">📖</span>
                 </div>
@@ -137,6 +137,33 @@ const PhoneMockup = () => {
                       <path strokeWidth={2} d="M12 6v6l4 2"/>
                     </svg>
                     7:00 PM
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-2.5">
+                <div className="w-16 h-12 rounded-lg bg-[#6b8e6b] flex items-center justify-center overflow-hidden">
+                  <span className="text-[8px]">🤲</span>
+                </div>
+                <div className="flex-1">
+                  <div className="inline-flex items-center gap-1 bg-[#e8f5e9] px-1.5 py-0.5 rounded text-[8px] text-primary mb-0.5">
+                    <svg className="w-2 h-2" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3z"/>
+                    </svg>
+                    Masjid Al-Noor
+                  </div>
+                  <h4 className="text-[10px] font-semibold text-foreground">Weekly Halaqah</h4>
+                  <div className="flex items-center gap-1 text-[8px] text-muted-foreground">
+                    <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" strokeWidth={2}/>
+                      <path strokeWidth={2} d="M12 6v6l4 2"/>
+                    </svg>
+                    8:30 PM
+                  </div>
+                  <div className="flex items-center gap-1 text-[8px] text-muted-foreground">
+                    <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    </svg>
+                    Main Hall
                   </div>
                 </div>
               </div>
