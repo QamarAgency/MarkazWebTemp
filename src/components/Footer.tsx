@@ -1,41 +1,56 @@
+import { Link } from "react-router-dom";
 import markazLogo from "@/assets/markaz-logo.png";
+import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-muted/30 py-8">
-      <div className="container">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <img 
-              src={markazLogo} 
-              alt="Markaz logo" 
-              className="h-6 w-6 object-contain"
-            />
-            <span className="text-sm text-muted-foreground">
-              © 2026 Markaz. All rights reserved.
-            </span>
-          </div>
-          <nav className="flex items-center gap-6">
-            <a 
-              href="#" 
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Privacy Policy
-            </a>
-            <a 
-              href="#" 
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Terms
-            </a>
-            <a 
-              href="#" 
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Contact
-            </a>
-          </nav>
+    <footer className="footer-container" id="find-us">
+      <div className="footer-content">
+        {/* Left Section - Logo and Tagline */}
+        <div className="footer-section footer-brand">
+          <Link to="/" style={{ width: "fit-content" }}>
+            <img src={markazLogo} alt="Markaz Logo" className="footer-logo" />
+          </Link>
+          <p className="footer-tagline">
+            Connecting communities through events and experiences.
+          </p>
+          <p className="footer-copyright">
+            © 2025 Markaz. All rights reserved.
+          </p>
         </div>
+
+        {/* Navigation Section */}
+        <div className="footer-section footer-nav">
+          <p className="footer-heading">Navigation</p>
+          <div className="footer-links">
+            <Link to="/">
+              <p className="footer-link">Home</p>
+            </Link>
+          </div>
+        </div>
+
+        {/* Get in Touch Section */}
+        <div className="footer-section footer-contact">
+          <p className="footer-heading">Get in Touch</p>
+          <div className="contact-info">
+            <a href="mailto:info@markaz.com" className="contact-link">
+              <p className="contact-text">info@markaz.com</p>
+            </a>
+            <a
+              href="https://www.instagram.com/markaz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              <p className="contact-text">@markaz</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="footer-bottom">
+        <p className="footer-copyright">Made with 💚 by the Markaz Team</p>
       </div>
     </footer>
   );

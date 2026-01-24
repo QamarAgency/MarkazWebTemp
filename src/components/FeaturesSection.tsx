@@ -7,17 +7,20 @@ const FeaturesSection = () => {
     {
       icon: Search,
       title: "Discover events",
-      description: "Browse local community events, workshops, and gatherings happening near you.",
+      description:
+        "Browse local community events, workshops, and gatherings happening near you.",
     },
     {
       icon: Users,
       title: "Follow organizations",
-      description: "Connect with mosques, cultural centers, and community groups you care about.",
+      description:
+        "Connect with mosques, cultural centers, and community groups you care about.",
     },
     {
       icon: Bell,
       title: "Save & get reminders",
-      description: "Never miss an event with personalized reminders and calendar sync.",
+      description:
+        "Never miss an event with personalized reminders and calendar sync.",
     },
   ];
 
@@ -44,10 +47,27 @@ const FeaturesSection = () => {
   };
 
   return (
-    <section className="py-16">
+    <section className="py-20 md:py-28">
       <div className="container">
-        <motion.div 
-          className="grid md:grid-cols-3 gap-6"
+        {/* Section Header */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            How Markaz works
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Everything you need to discover and connect with your community
+          </p>
+        </motion.div>
+
+        {/* Features Grid */}
+        <motion.div
+          className="grid md:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
