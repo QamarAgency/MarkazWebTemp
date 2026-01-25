@@ -89,12 +89,13 @@ const HeroSection = () => {
               }}
             >
               Find local events, connect with organizations, and build
-              belonging—starting in Waterloo.
+              belonging - starting in Waterloo.
             </motion.p>
 
             {/* CTA Section */}
             <motion.div
               className="flex flex-col gap-6"
+              style={{ alignItems: "center" }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{

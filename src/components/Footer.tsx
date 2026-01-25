@@ -19,30 +19,20 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Navigation Section */}
-        <div className="footer-section footer-nav">
-          <p className="footer-heading">Navigation</p>
-          <div className="footer-links">
-            <Link to="/">
-              <p className="footer-link">Home</p>
-            </Link>
-          </div>
-        </div>
-
         {/* Get in Touch Section */}
         <div className="footer-section footer-contact">
           <p className="footer-heading">Get in Touch</p>
           <div className="contact-info">
             <a href="mailto:info@markaz.com" className="contact-link">
-              <p className="contact-text">info@markaz.com</p>
+              <p className="contact-text">qamar@markaz.com</p>
             </a>
             <a
-              href="https://www.instagram.com/markaz"
+              href="https://www.instagram.com/getmarkaz"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <p className="contact-text">@markaz</p>
+              <p className="contact-text">@getmarkaz</p>
             </a>
           </div>
         </div>
