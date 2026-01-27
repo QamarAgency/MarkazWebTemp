@@ -84,7 +84,7 @@ const EarlyAccessModal = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md border-0 rounded-2xl shadow-2xl">
+      <DialogContent className="w-[90%] max-w-md border-0 rounded-2xl shadow-2xl z-[9999] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <DialogHeader className="space-y-2">
           <DialogTitle className="text-2xl font-bold">{title}</DialogTitle>
           <DialogDescription className="text-base text-muted-foreground">
@@ -99,7 +99,7 @@ const EarlyAccessModal = ({
               htmlFor="name"
               className="text-sm font-medium text-foreground"
             >
-              Name
+              Name *
             </Label>
             <Input
               id="name"
@@ -108,6 +108,7 @@ const EarlyAccessModal = ({
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
+              required
               className="rounded-lg border border-border bg-background/50 px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
@@ -118,7 +119,7 @@ const EarlyAccessModal = ({
               htmlFor="email"
               className="text-sm font-medium text-foreground"
             >
-              Email
+              Email *
             </Label>
             <Input
               id="email"
@@ -127,6 +128,7 @@ const EarlyAccessModal = ({
               placeholder="your@email.com"
               value={formData.email}
               onChange={handleChange}
+              required
               className="rounded-lg border border-border bg-background/50 px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
@@ -137,7 +139,7 @@ const EarlyAccessModal = ({
               htmlFor="location"
               className="text-sm font-medium text-foreground"
             >
-              Location
+              Location *
             </Label>
             <Input
               id="location"
@@ -146,6 +148,7 @@ const EarlyAccessModal = ({
               placeholder="City, Country"
               value={formData.location}
               onChange={handleChange}
+              required
               className="rounded-lg border border-border bg-background/50 px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
@@ -157,7 +160,7 @@ const EarlyAccessModal = ({
                 htmlFor="businessName"
                 className="text-sm font-medium text-foreground"
               >
-                Business Name
+                Business Name *
               </Label>
               <Input
                 id="businessName"
@@ -166,6 +169,7 @@ const EarlyAccessModal = ({
                 placeholder="Your business name"
                 value={formData.businessName}
                 onChange={handleChange}
+                required
                 className="rounded-lg border border-border bg-background/50 px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
