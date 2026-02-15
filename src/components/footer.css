@@ -114,8 +114,12 @@
 
 .contact-icon {
   color: var(--eggshell-bg, #f8f4e6);
-  font-size: 24px;
+  flex-shrink: 0;
   transition: color 0.3s ease;
+}
+
+.contact-link:hover .contact-icon {
+  color: var(--light-forest-green, #a5d6a7);
 }
 
 .contact-text {

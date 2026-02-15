@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Mail, Instagram } from "lucide-react";
 import markazLogo from "@/assets/markaz-logo.png";
 import "./footer.css";
 
@@ -19,12 +20,26 @@ const Footer = () => {
           </p>
         </div>
 
+        {/* Legal Section */}
+        <div className="footer-section footer-nav">
+          <p className="footer-heading">Legal</p>
+          <div className="footer-links">
+            <Link to="/terms-of-service" className="footer-link">
+              Terms of Service
+            </Link>
+            <Link to="/privacy-policy" className="footer-link">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
+
         {/* Get in Touch Section */}
         <div className="footer-section footer-contact">
           <p className="footer-heading">Get in Touch</p>
           <div className="contact-info">
-            <a href="mailto:info@markaz.com" className="contact-link">
-              <p className="contact-text">qamar@markaz.com</p>
+            <a href="mailto:info@markazapp.com" className="contact-link">
+              <Mail className="contact-icon" size={20} />
+              <p className="contact-text">info@markazapp.com</p>
             </a>
             <a
               href="https://www.instagram.com/getmarkaz"
@@ -32,6 +47,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="contact-link"
             >
+              <Instagram className="contact-icon" size={20} />
               <p className="contact-text">@getmarkaz</p>
             </a>
           </div>
